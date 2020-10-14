@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block temp %}
+    {% for post in posts %}
+
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.content }} by {{  post.author }} on {{ post.Date }}
+
+        </p>
+    {% endfor %}
+
+{% endblock temp %}

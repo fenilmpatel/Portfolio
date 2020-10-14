@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block temp %}
+   
+
+        
+    <h1>About Page</h1>
+
+{% for post in posts %}
+
+    <h3>{{ post.author }}</h3>
+    
+{% endfor%}
+
+
+   
+
+{% endblock temp %}
